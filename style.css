@@ -1,0 +1,124 @@
+body {
+font-family: Arial, sans-serif;
+margin: 20px;
+background-color: #f4f6f8;
+color: #333;
+}
+
+h1 {
+text-align: center;
+}
+
+header {
+text-align: center;
+margin-bottom: 30px;
+}
+
+header img {
+display: block;
+margin: 0 auto 10px;
+}
+
+/* Add Expense Section */
+#add-expense {
+background-color: #f0f0f0;
+padding: 20px;
+margin-top: 20px;
+border-radius: 8px;
+}
+
+/* Form inputs */
+.expense-input {
+display: block;
+margin-bottom: 15px;
+padding: 8px;
+width: 250px;
+box-sizing: border-box;
+}
+
+/* Focus selector */
+input:focus,
+select:focus {
+outline: 2px solid #4CAF50;
+}
+
+/* Negation pseudo-class */
+input:not([type="submit"]) {
+border: 1px solid #ccc;
+}
+
+/* Add Expense button */
+button {
+padding: 10px 18px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+/* Button hover */
+button:hover {
+opacity: 0.8;
+}
+
+/* Your Expenses Section */
+#your-expenses {
+background-color: #e8f5e9;
+padding: 20px;
+margin-top: 20px;
+border-radius: 8px;
+}
+
+/* Table */
+table {
+width: 100%;
+border-collapse: collapse;
+background-color: white;
+}
+
+/* Table headers */
+th {
+background-color: #2c3e50;
+color: white;
+padding: 12px;
+text-align: left;
+}
+
+/* Descendant selector */
+#your-expenses td {
+padding: 12px;
+border: 1px solid #ddd;
+}
+
+/* Alternating rows */
+tr:nth-child(even) {
+background-color: #f2f2f2;
+}
+
+/* Table row hover */
+tr:hover {
+background-color: #dfe6e9;
+}
+
+/* Instructions */
+#instructions {
+margin-top: 30px;
+background-color: white;
+padding: 20px;
+border-radius: 8px;
+}
+
+/* Summary */
+summary {
+cursor: pointer;
+font-weight: bold;
+}
+
+/* Video */
+#budget-video {
+margin-top: 30px;
+text-align: center;
+}
+
+iframe {
+max-width: 100%;
+}
