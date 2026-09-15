@@ -1,96 +1,209 @@
-# Personal Budget & Expense Tracker
+# My Budget Tracker
 
-## Week 2 Assignment
+## Project Overview
 
-This project is a Personal Budget & Expense Tracker built using HTML and CSS.
+My Budget Tracker is a simple web-based application designed to help users record and organize their daily expenses.
 
-The project was continued from Week 1 and improved by adding a structured expense table, an upgraded expense form, multimedia content, interactive elements, and advanced CSS selectors.
+The project was developed progressively during the HTML and CSS learning weeks. This Week 3 update focuses on improving the **visual identity and user interface** of the existing Budget Tracker using CSS.
+
+The project uses HTML for the structure and CSS for the visual design. JavaScript functionality will be added in a later stage.
 
 ## Project Files
 
+```text
+budget-tracker/
+│
+├── index.html
+├── style.css
+├── README.md
+└── ad0091b1-ea10-4c53-af2f-9bebe960deea_20251115_125910_0000.png
+```
+
 ### index.html
 
-The `index.html` file contains the structure of the Budget Tracker.
+The `index.html` file provides the structure of the Budget Tracker.
 
-It includes:
+It contains:
 
-* A main heading and logo
-* An Add Expense form
-* Expense name, amount, category and date inputs
-* A category dropdown with five options
-* An Add Expense button
-* An expense table
-* Sample expense records
-* A collapsible How to Use section
-* An embedded budgeting video
+* Budget Tracker heading and logo
+* Add Expense form
+* Expense name input
+* Expense amount input
+* Expense category dropdown
+* Expense date input
+* Add Expense button
+* Expense table
+* Instructions section
+* Budgeting Tips video
 
 ### style.css
 
-The `style.css` file controls the appearance of the Budget Tracker.
+The `style.css` file controls the visual appearance of the application.
 
 It includes:
 
-* Table borders and spacing
-* Colored table headers
-* Alternating table row colors
-* Table row hover effects
+* Color palette
+* Google Fonts
+* Heading and body typography
 * Form styling
 * Button styling
-* Input focus effects
-* Advanced CSS selectors
+* Expense table styling
+* Alternating table row colors
+* Borders and rounded corners
+* Card-style sections
+* Spacing using the CSS Box Model
+* Responsive design for smaller screens
 
-## HTML Table
+## Week 3 Visual Design
 
-The expense table uses:
+### 1. Color Palette
 
-* `<table>`
-* `<thead>`
-* `<tbody>`
-* `<tr>`
-* `<th>`
-* `<td>`
+A small and consistent color palette was selected to give the Budget Tracker a clean and professional financial-app appearance.
 
-The table contains five sample expenses.
+| Color      | Hex Code  | Usage                              |
+| ---------- | --------- | ---------------------------------- |
+| Navy       | `#17324d` | Main headings and table headers    |
+| Green      | `#2e8b57` | Buttons, accents and focus effects |
+| Light Gray | `#eef2f7` | Page background                    |
+| White      | `#ffffff` | Cards and table background         |
+| Soft Gray  | `#f4f7fa` | Alternating table rows             |
 
-## Add Expense Form
+The navy and green combination creates a professional appearance while maintaining good visual consistency throughout the application.
 
-The form contains:
+## 2. Typography
 
-* Expense name
-* Expense amount
-* Expense category
-* Expense date
-* Add Expense button
+Google Fonts are used to improve readability and visual hierarchy.
 
-The category field is a dropdown containing:
+### Poppins
 
-1. Food
-2. Transport
-3. Rent
-4. Entertainment
-5. Other
+Poppins is used for:
 
-## Multimedia
+* Main heading
+* Section headings
+* Table headers
+* Button text
 
-An image is included near the main heading using the `<img>` element.
+### Open Sans
 
-A YouTube budgeting video is embedded using an `<iframe>`.
+Open Sans is used for:
 
-## Interactive Elements
+* Body text
+* Labels
+* Form inputs
+* Table content
+* Instructions
 
-A `<details>` and `<summary>` element was added to create a collapsible section explaining how to use the tracker.
+Using separate fonts for headings and body content creates a clearer visual hierarchy.
 
-A hover effect was also added to the expense table rows.
+## 3. Expense Table Styling
 
-## Advanced CSS Selectors
+The expense table was redesigned to make the information easier to read.
 
-The project demonstrates several advanced CSS selectors, including:
+The table includes:
 
-* Descendant selector
-* `:nth-child()` pseudo-class
-* `:focus` pseudo-class
-* `:not()` pseudo-class
+* A dark navy header
+* White header text
+* Padding inside table cells
+* Borders for structure
+* Alternating row colors
+* Hover effects
+* Rounded corners
+* Consistent typography
 
-## Future Development
+Alternating row colors make it easier to follow individual expenses across the table.
 
-The Add Expense button does not currently add expenses dynamically. JavaScript functionality will be introduced in later weeks to make the tracker fully interactive.
+## 4. Add Expense Form Styling
+
+The Add Expense form was improved using CSS.
+
+The form includes:
+
+* Proper spacing between labels and inputs
+* Padded input fields
+* Rounded input corners
+* Consistent borders
+* Focus effects
+* A professionally styled green button
+* Consistent typography
+
+The input focus effect also helps users identify which field they are currently using.
+
+## 5. CSS Box Model
+
+The CSS Box Model was intentionally used throughout the application.
+
+### Margin
+
+Margin is used to create space between different sections of the page.
+
+### Padding
+
+Padding is used to create comfortable space inside cards, forms, buttons and table cells.
+
+### Border
+
+Borders are used to define sections and separate table content.
+
+### Border Radius
+
+Border radius is used to create a softer and more modern appearance.
+
+The main sections are presented as distinct visual cards:
+
+* Page heading
+* Add Expense form
+* Expense Table
+* Instructions
+* Budgeting Tips
+
+## 6. Responsive Design
+
+Responsive CSS was included so that the Budget Tracker can adapt to smaller screen sizes.
+
+On smaller screens:
+
+* Page spacing is reduced
+* Headings become smaller
+* Table text and cell padding are adjusted
+* The video adapts to the available screen width
+
+## Technologies Used
+
+* HTML5
+* CSS3
+* Google Fonts
+* YouTube Embed
+
+## Learning Objectives
+
+This project helped me practice:
+
+* CSS color selection
+* Typography
+* Google Fonts
+* Form styling
+* Table styling
+* CSS selectors
+* Pseudo-classes
+* Borders and border-radius
+* Margin and padding
+* CSS Box Model
+* Responsive design
+
+## Future Improvements
+
+Future versions of the Budget Tracker may include:
+
+* JavaScript functionality
+* Adding expenses dynamically
+* Editing and deleting expenses
+* Automatic total calculations
+* Budget summaries
+* Expense filtering
+* Data storage
+
+## Author
+
+**DML JAY**
+
+Budget Tracker Project — Week 3 Visual Design Challenge
