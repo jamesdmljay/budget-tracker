@@ -1,14 +1,113 @@
-# My Budget Tracker
+# SpendWise Dashboard
 
-## Project Overview
+SpendWise is a responsive budget-tracking dashboard designed to help users monitor their budgets, expenses, savings, and spending categories through a clean and structured interface.
 
-My Budget Tracker is a simple web-based application designed to help users record and organize their daily expenses.
+This project was developed as part of a web development assignment focusing on **CSS Grid, Flexbox, responsive design, CSS custom properties, and micro-interactions**.
 
-The project was developed progressively during the HTML and CSS learning weeks. This Week 3 update focuses on improving the **visual identity and user interface** of the existing Budget Tracker using CSS.
+## Features
 
-The project uses HTML for the structure and CSS for the visual design. JavaScript functionality will be added in a later stage.
+* Responsive dashboard layout
+* Sidebar navigation
+* Financial summary cards
+* Six spending categories:
 
-## Project Files
+  * Food
+  * Transport
+  * Rent
+  * Entertainment
+  * Savings
+  * Utilities
+* Recent expenses table
+* Budgeting tips section
+* Hover and keyboard-focus interactions
+* Responsive mobile layout
+* Dark theme support using the user's system preference
+
+## Technologies Used
+
+* HTML5
+* CSS3
+* CSS Grid
+* Flexbox
+* CSS Custom Properties
+* Google Fonts
+* Responsive Media Queries
+
+## Dashboard Layout
+
+The dashboard uses **CSS Grid** to create the main page structure:
+
+* Sidebar navigation
+* Main content area
+* Summary section
+* Category section
+* Recent expenses section
+
+CSS Grid is also used to organize the summary and category cards into responsive layouts.
+
+## Flexbox Implementation
+
+Flexbox is used inside different dashboard components, including:
+
+* Sidebar navigation items
+* Header content
+* Profile section
+* Summary cards
+* Category cards
+* Progress information
+
+This provides flexible alignment and spacing across different screen sizes.
+
+## CSS Custom Properties
+
+The project uses CSS variables defined in `:root` to maintain a consistent visual design.
+
+Examples include:
+
+```css
+:root {
+    --brand-color: #17324d;
+    --accent-color: #2e8b57;
+    --surface-color: #ffffff;
+    --background-color: #eef2f7;
+    --primary-text: #263238;
+    --secondary-text: #607080;
+}
+```
+
+Using custom properties makes the design easier to maintain and update.
+
+## Responsive Design
+
+The dashboard is designed to adapt to different screen sizes.
+
+At widths below **768px**, the layout changes to a single-column structure to improve usability on tablets and mobile devices.
+
+The responsive design was tested using the browser's **DevTools Device Toolbar**.
+
+## Micro-Interactions
+
+Category cards include subtle hover and keyboard-focus effects.
+
+These interactions use:
+
+* `transform`
+* `box-shadow`
+* `transition`
+
+The transition duration is **200ms**, keeping the animation smooth and within the assignment requirement of 250ms or less.
+
+## Dark Theme
+
+The project supports a system-based dark theme using:
+
+```css
+@media (prefers-color-scheme: dark)
+```
+
+The dark theme uses CSS custom properties to adjust the dashboard's colors while maintaining the same layout and structure.
+
+## Project Structure
 
 ```text
 budget-tracker/
@@ -19,191 +118,33 @@ budget-tracker/
 └── ad0091b1-ea10-4c53-af2f-9bebe960deea_20251115_125910_0000.png
 ```
 
-### index.html
+## Getting Started
 
-The `index.html` file provides the structure of the Budget Tracker.
-
-It contains:
-
-* Budget Tracker heading and logo
-* Add Expense form
-* Expense name input
-* Expense amount input
-* Expense category dropdown
-* Expense date input
-* Add Expense button
-* Expense table
-* Instructions section
-* Budgeting Tips video
-
-### style.css
-
-The `style.css` file controls the visual appearance of the application.
-
-It includes:
-
-* Color palette
-* Google Fonts
-* Heading and body typography
-* Form styling
-* Button styling
-* Expense table styling
-* Alternating table row colors
-* Borders and rounded corners
-* Card-style sections
-* Spacing using the CSS Box Model
-* Responsive design for smaller screens
-
-## Week 3 Visual Design
-
-### 1. Color Palette
-
-A small and consistent color palette was selected to give the Budget Tracker a clean and professional financial-app appearance.
-
-| Color      | Hex Code  | Usage                              |
-| ---------- | --------- | ---------------------------------- |
-| Navy       | `#17324d` | Main headings and table headers    |
-| Green      | `#2e8b57` | Buttons, accents and focus effects |
-| Light Gray | `#eef2f7` | Page background                    |
-| White      | `#ffffff` | Cards and table background         |
-| Soft Gray  | `#f4f7fa` | Alternating table rows             |
-
-The navy and green combination creates a professional appearance while maintaining good visual consistency throughout the application.
-
-## 2. Typography
-
-Google Fonts are used to improve readability and visual hierarchy.
-
-### Poppins
-
-Poppins is used for:
-
-* Main heading
-* Section headings
-* Table headers
-* Button text
-
-### Open Sans
-
-Open Sans is used for:
-
-* Body text
-* Labels
-* Form inputs
-* Table content
-* Instructions
-
-Using separate fonts for headings and body content creates a clearer visual hierarchy.
-
-## 3. Expense Table Styling
-
-The expense table was redesigned to make the information easier to read.
-
-The table includes:
-
-* A dark navy header
-* White header text
-* Padding inside table cells
-* Borders for structure
-* Alternating row colors
-* Hover effects
-* Rounded corners
-* Consistent typography
-
-Alternating row colors make it easier to follow individual expenses across the table.
-
-## 4. Add Expense Form Styling
-
-The Add Expense form was improved using CSS.
-
-The form includes:
-
-* Proper spacing between labels and inputs
-* Padded input fields
-* Rounded input corners
-* Consistent borders
-* Focus effects
-* A professionally styled green button
-* Consistent typography
-
-The input focus effect also helps users identify which field they are currently using.
-
-## 5. CSS Box Model
-
-The CSS Box Model was intentionally used throughout the application.
-
-### Margin
-
-Margin is used to create space between different sections of the page.
-
-### Padding
-
-Padding is used to create comfortable space inside cards, forms, buttons and table cells.
-
-### Border
-
-Borders are used to define sections and separate table content.
-
-### Border Radius
-
-Border radius is used to create a softer and more modern appearance.
-
-The main sections are presented as distinct visual cards:
-
-* Page heading
-* Add Expense form
-* Expense Table
-* Instructions
-* Budgeting Tips
-
-## 6. Responsive Design
-
-Responsive CSS was included so that the Budget Tracker can adapt to smaller screen sizes.
-
-On smaller screens:
-
-* Page spacing is reduced
-* Headings become smaller
-* Table text and cell padding are adjusted
-* The video adapts to the available screen width
-
-## Technologies Used
-
-* HTML5
-* CSS3
-* Google Fonts
-* YouTube Embed
-
-## Learning Objectives
-
-This project helped me practice:
-
-* CSS color selection
-* Typography
-* Google Fonts
-* Form styling
-* Table styling
-* CSS selectors
-* Pseudo-classes
-* Borders and border-radius
-* Margin and padding
-* CSS Box Model
-* Responsive design
+1. Clone or download the existing repository.
+2. Open the project folder.
+3. Open `index.html` in a web browser.
+4. Resize the browser window or use DevTools Device Toolbar to test responsiveness.
 
 ## Future Improvements
 
-Future versions of the Budget Tracker may include:
+Future versions could include:
 
-* JavaScript functionality
-* Adding expenses dynamically
-* Editing and deleting expenses
-* Automatic total calculations
-* Budget summaries
-* Expense filtering
-* Data storage
+* User authentication
+* Adding and deleting expenses
+* Automatic budget calculations
+* Interactive charts
+* Persistent data storage
+* Monthly financial reports
+* Expense filtering and searching
+* Database integration
 
 ## Author
 
 **DML JAY**
 
-Budget Tracker Project — Week 3 Visual Design Challenge
+Diploma in Information Technology
+Web Development & Graphic Design
+
+## Project Repository
+
+This project is maintained in the existing **budget-tracker** GitHub repository.
